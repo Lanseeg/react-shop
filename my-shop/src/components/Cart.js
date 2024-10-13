@@ -1,9 +1,11 @@
+import '../styles/Cart.css'
+
 function Cart() {
 	const item1Price = 8
 	const item2Price = 10
 	const item3Price = 15
 	return (
-		<div>
+		<div className='ps-cart'>
 			<h2>Shopping Cart</h2>
 			<ul>
 				<li>Item 1 : {item1Price}€</li>
