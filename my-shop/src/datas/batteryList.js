@@ -2,7 +2,8 @@ export const batteryList = [
     {
         name: 'lithium-ion',
         category: 'lithium',
-        id: '1ed'
+        id: '1ed',
+        isSpecialOffer: true,
     },
     {
         name: 'lithium-polymer',
@@ -17,7 +18,8 @@ export const batteryList = [
     {
         name: 'nickel-metal-hydride',
         category: 'nickel',
-        id: '4kk'
+        id: '4kk',
+        isSpecialOffer: true
     },
     {
         name: 'lead-acid',
@@ -27,7 +29,8 @@ export const batteryList = [
     {
         name: 'gel-lead',
         category: 'lead',
-        id: '6uo'
+        id: '6uo',
+        isSpecialOffer: true
     },
     {
         name: 'sodium-sulfur',

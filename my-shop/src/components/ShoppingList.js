@@ -1,4 +1,6 @@
-import { batteryList } from "../datas/batteryList"
+import { batteryList } from '../datas/batteryList'
+import '../styles/ShoppingList.css'
+import '../styles/Cart.css'
 
 function ShoppingList() {
     const categories = batteryList.reduce(
@@ -9,14 +11,17 @@ function ShoppingList() {
 
     return (
         <div>
-            <ul>
+            <ul className='ps-cart'>
                 {categories.map((cat) =>(
                     <li key={cat}>{cat}</li>
                 ))}
             </ul>
-            <ul>
-				{batteryList.map((plant) => (
-					<li key={plant.id}>{plant.name}</li>
+            <ul className='ps-battery-list'>
+				{batteryList.map((battery) => (
+					<li key={battery.id} className='ps-battery-item'>
+                        {battery.name}
+                        {battery.isSpecialOffer && <div className='ps-sales'>Sales</div>}
+                    </li>
 				))}
 			</ul>
         </div>

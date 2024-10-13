@@ -1,5 +1,6 @@
 .ps-banner {
-	color: black;
+	color: rgb(255, 252, 252);
+    background-color: #d64e18;
 	text-align: right;
 	padding: 32px;
 	border-bottom: solid 3px black;
