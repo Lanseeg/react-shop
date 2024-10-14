@@ -1,6 +1,8 @@
 import { batteryList } from '../datas/batteryList'
 import '../styles/ShoppingList.css'
 import '../styles/Cart.css'
+import BatteryItem from './BatteryItem'
+import '../styles/BatteryItem.css'
 
 function ShoppingList() {
     const categories = batteryList.reduce(
@@ -17,11 +19,14 @@ function ShoppingList() {
                 ))}
             </ul>
             <ul className='ps-battery-list'>
-				{batteryList.map((battery) => (
-					<li key={battery.id} className='ps-battery-item'>
-                        {battery.name}
-                        {battery.isSpecialOffer && <div className='ps-sales'>Sales</div>}
-                    </li>
+				{batteryList.map(({ id, cover, name, star, lifetime }) => (
+					<BatteryItem 
+                    id={id}
+                    cover={cover}
+                    name={name}
+                    star={star}
+                    lifetime={lifetime}
+                    />
 				))}
 			</ul>
         </div>

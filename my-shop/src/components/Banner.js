@@ -2,7 +2,7 @@ import logo from '../assets/images/cart.jpg'
 import '../styles/Banner.css'
 
 function Banner() {
-    const title = "Peran's Shop"
+    const title = "Peran's battery Shop"
     return (
         <div className='ps-banner'>
             <img src={logo} alt='Peran shop banner' className='ps-logo' />
